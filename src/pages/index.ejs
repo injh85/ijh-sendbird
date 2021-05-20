@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello Node!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    
+    <!-- ref: https://github.com/sendbird/SendBird-JavaScript/tree/master/web-widget -->
+    <div id="sb_widget"></div>
+    
+    <script src="/SendBird.min.js"></script>
+    <script src="https://sample.sendbird.com/widget/dist/widget.SendBird.js"></script>
+    <script>
+      sbWidget.start('<%= sendBirdAppId%>');
+    </script>
+  </body>
+</html>
